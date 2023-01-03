@@ -1,0 +1,265 @@
+.main{
+    background: #eae3e3;
+}
+li{
+    list-style: none;
+}
+.Navbar{
+    position:relative;
+    left: 0;
+    width: 40%;    
+}
+#navbarRes{
+    display: none;
+}
+.sliderBar{
+    background: rgb(4, 4, 186);
+    border-radius: .7rem;
+    margin-left: -1rem;
+}
+.sliderBar1{
+  height: 170vh;
+}
+.sliderBar h2{
+    color: white;
+    font-style: italic;
+}
+.sliderBar li{
+    color: white;
+    font-weight: 500;
+}
+.sliderItem li i{
+    padding: 0 7px 0 0;
+}
+.sliderItem  .active{
+ background: white;
+ color: blue;
+}
+.sliderItem li:hover{
+    background: white;
+    color: blue;
+}
+
+/* // css menu bar   */
+.menubar{
+    background: white;
+    margin: 15px 0 0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.item li img{
+    width: 50px;
+    height: 50px;
+}
+.item li{
+    font-weight: 500;
+}
+.dots{
+    position: absolute;
+    top: 3.2rem;
+    right: 7rem;
+}
+.profilepic img{
+    width: 70px;
+    height: 70px;
+}
+.menubtn{
+    position: absolute;
+    left: -3rem;
+}
+/* main body */
+.mainHeading{
+    background: #eae3e3;
+}
+.mainHeading h5{font-size: 2rem;}
+.secondBar div{
+    width: 25%;
+    border: 1px solid rgb(100, 100, 111, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.secondBar div:hover{
+    background: #f1c02c;
+}
+.lastBar div{
+     width: 25%;
+     border: 1px solid #eae3e3;
+}
+/* //Right slide bar   */
+.rightSlideBar{
+    border-radius: .5rem;
+    margin-top: 6rem;
+}
+.rightSlideBar .title{
+    background-color:#49c295;
+    border-radius: .7rem .7rem 0 0;
+}  
+.rightSlideBar li{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+.rightSlideBar ul:nth-child(2) li:nth-child(1) {
+    padding: 0!important;
+    position: relative;
+    top: .6rem; 
+    /* background-color: #f1c02c; */
+} 
+.rightSlideBar ul:nth-child(2) li:nth-child(1) div:nth-child(2){
+    height: 45px;
+    /* background-color: #423714; */
+} 
+ .free{
+text-align: center;
+border-radius: 20px!important;
+ width: 50px;       
+ height: 25px;
+ background: green;
+}
+.boxes div div{
+    padding:0 5px;
+    margin-left: 2px;
+}
+.boxes span{
+    font-size: 5px;
+    text-align: center;
+    position: relative;
+    top: -.5rem;
+    right: -.3rem;
+}
+.card{
+    background:#eae3e3;
+}
+.first{
+    padding: 1rem 1rem 2rem 0;
+    background: rgb(4, 4, 186);
+}
+.second{ background: rgb(4, 4, 186);}
+.b1{background-color: #49c295;}
+.b2{background-color: #f9c529;}
+.b3{background-color: green;}
+.b4{background-color: orange;}
+.third{
+    height: 4.5vh;
+    background: lightgray;
+    font-size: .7rem;    
+}
+.fourth{font-size: .7rem;}
+.fourth span{
+    font-size: .9rem;
+    font-weight: bolder;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    align-items: center;
+}
+.profileImg{
+   background: rgb(4, 4, 186);
+    border: 2px solid lightgray;
+    position: relative;
+    right: 1rem;
+    top: -2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.btn1{background: #49c295;}
+.btn2{border-radius: .5rem;}
+#caroualCard{ display: none;}
+.res-body{background: #eae3e3;}
+
+/* responsive css query  */
+@media screen and (max-width:400px){
+    
+ .menubar{ margin-left: 10px;  }
+ .menubar .item li{
+    font-size: 7px;
+    font-weight: bold;
+ }
+
+.sliderBarResMenu .free{
+    width: 50px;
+    height: 20px;
+}
+.rightSlideBar ul:nth-child(2) li:nth-child(1) {
+    padding: .4rem 0 0 0!important;
+} 
+
+.rightSlideBar ul li{font-size: 11px; margin-left: 6px;
+font-weight: 600;}
+#resCenter{margin:0 1px 0 1px;   }
+}
+
+@media screen and (max-width:768px){
+    .Navbar{     display: none; }
+    #navbarRes{
+        display: block;
+        width: 100%;      
+    }
+.profilepic img{
+    width: 50px;
+    height: 50px;    
+}
+.item li img{
+    width: 20px;
+    height: 20px;
+}
+ .rightSlideBar{ margin-top: 0;}
+ .rightSlideBar ul li div:nth-child(2) {margin-left: 4px;}
+.topbar{ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+.menubtn2B{
+    color: black !important; width: 30px !important;height: 30px !important;
+}
+.btnf{
+    position: relative; top: 1rem; right: -.5rem;
+}
+.menubtn2{
+    color: black !important;
+    width: 30px !important;
+    height: 30px !important;
+    position: relative;top: -.3rem;right: .8rem;   
+}
+.stars i{font-size: 7px;}
+#cardRes{display: none;}
+#caroualCard{display: block;}
+.menubtn{
+    position: relative; left: 0;
+}
+.mainHeading h5{font-size: 1rem;}
+.boxes{ margin-left: 2px;}
+.boxes span{
+    font-size: 5px;
+    text-align: center;
+    position: relative;top: 1px;
+    right: -.3rem;
+}
+.first{ border-radius: 1rem  1rem 0 0!important;}
+.card{
+    border-radius: 1rem!important; 
+}
+.card h5{font-size: 1.1rem;}
+.first{
+    padding: 1rem 1rem .5rem 0;
+    background: rgb(4, 4, 186);
+}
+.btn1{
+    position: relative; top: -.5rem;
+}
+.borderC{
+     height: 3px;
+    background: rgb(106, 143, 210);
+}
+.sliderBarResMenu{display: flex;}
+
+}
+@media screen and (max-width: 1000px){
+ #resBody{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column-reverse;}
+}
+    
+
+
+    
