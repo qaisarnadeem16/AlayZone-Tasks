@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iQzeto_form</title>
+    <!-- link custom css  -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- link bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--  Fontawsome Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid d-flex p-0 m-0">
+      <!-- slid bar  -->
+
+      <div
+        class="sliderBar px-md-1 mt-md-2"
+        id="responsiveSideBar"
+        style="height: 100vh"
+      >
+        <div>
+          <h2 class="py-3 text-center">iQzeto</h2>
+        </div>
+        <div class="sliderItem ">
+          <ul class="p-0 ms-4">
+            <li class="active rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-house"></i>Dashboards
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-box"></i> Question Bank
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-business-time"></i>Shedule Quiz
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-regular fa-user"></i> Profile
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-wallet"></i> My Wallet
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-people-roof"></i>User Management
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-business-time"></i>User Shedule
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-server"></i>Played Quiz
+            </li>
+          </ul>
+        
+        </div>
+        <!-- <div class="">
+            <button class="">Clear</button>
+          </div> -->
+      </div>
+
+      <div class="container-fluid">
+        <!-- main body  -->
+        <div class="ms-md-3">
+          <div class="row pt-2">
+            <div
+              class="menubar d-flex justify-content-between align-items-center rounded"
+            >
+              <div class="item pt-2">
+                <ul class="p-0 d-flex gap-3 align-items-center">
+                  <li class="menubtn">
+                    <button
+                      class="btn border"
+                      type="button"
+                      id="menubtn"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </button>
+                  </li>
+
+                  <li class="d-flex">
+                    <div class="text-dark text-wrap" style="width: rem">
+                      <img src="./assets/item1.PNG" alt="" />
+                    </div>
+                    <div class="">
+                      12$ <br />
+                      Real Qzeto
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="text-dark text-wrap" style="width: rem">
+                      <img src="./assets/item2.PNG" alt="" />
+                    </div>
+                    <div class="">3$ <br />Qzeto Price</div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="text-dark text-wrap" style="width: rem">
+                      <img src="./assets/item3.PNG" alt="" />
+                    </div>
+                    <div class="">
+                      0$ <br />
+                      Bounas back
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="toggleBtn d-none d-md-block">
+                  <div class="d-flex">
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                      <span class="position-absolute ms-4 mt-1 text-white text2"
+                        >start</span
+                      >
+                    </label>
+                    <label class="switch ms-2 me-2">
+                      <input type="checkbox" />
+                      <span class="slider round bg-success"></span>
+                      <span class="position-absolute ms-4 mt-1 text-white text2"
+                        >End</span
+                      >
+                    </label>
+                    <!-- Checked switch -->
+                  </div>
+                </div>
+                <div class="profile d-flex">
+                  <div
+                    class="profileName mt-3 d-none d-md-block fw-bold text-primary"
+                  >
+                    <span>Charlotte</span> <span class="dots">...</span>
+                  </div>
+                  <div class="profilepic">
+                    <img src="./assets/profile.PNG" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /form  -->
+
+        <div class="columsForm mt-md-4 menubar rounded pt-3 pb-5">
+          <!-- top bar  -->
+          <div
+            class="col-md-11 mx-auto mb-md-5 d-md-flex justify-content-between align-items-center bg-primary rounded py-3"
+          >
+            <div>
+              <h6 class="text-md-center text-white ms-2">This is Quiz name</h6>
+            </div>
+            <div class="d-flex me-md-4">
+              <div class="bg-white py-1 px-2 ms-2" style="border-radius: 3rem">
+                <i class="fa-sharp fa-solid fa-award text-warning fs-5"></i>
+                <span class="ms-2">Prize: 500 INR</span>
+              </div>
+              <div class="bg-white py-1 px-2 ms-3" style="border-radius: 3rem">
+                <i class="fa-solid fa-people-group text-primary fs-5"></i>
+                <span class="ms-2">Prize: 500 INR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- /second box -->
+          <div class="col-md-8 mx-auto mt-5 box2 py-5  border">
+            <div class=" position-relative">
+                <div class="spinner1 translate-middle rounded-circle">
+                        <div class="spinner-border text-danger p-4 position-absolute" role="status">
+                </div>
+                <div class=" text-dark mycounter1"><h4 class="mycounter rounded-circle p-2 px-2"></h4></div>
+             </div>
+                
+             
+        </div>
+            <div class="">
+              <h4 class="text-center">
+                Drag colums B to match the statement in colums A
+              </h4>
+            </div>
+          </div>
+
+          <!-- third column  -->
+          <div class="mt-4 mb-3">
+            <div class="">
+              <h6 class="text-muted text-center fs-6">Rearrange Colums B</h6>
+            </div>
+          </div>
+
+          <!-- forth colums  -->
+          <div class="col-md-12 mx-auto mt-3">
+            <div class="row">
+              <div class="col-md-4 offset-md-2 ">
+                <fieldset class="border px-2 rounded">
+                  <legend class="float-none w-auto text-center">
+                    Colums A
+                  </legend>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-warning py-2 px-3"
+                      id="basic-addon1"
+                      >A</span
+                    >
+                    <div class="form-control">Statement 1</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-success py-2 px-3"
+                      id="basic-addon1"
+                      >B</span
+                    >
+                    <div class="form-control">Statement 2</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-danger py-2 px-3"
+                      id="basic-addon1"
+                      >C</span
+                    >
+                    <div class="form-control">Statement 3</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-warning py-2 px-3"
+                      id="basic-addon1"
+                      >D</span
+                    >
+                    <div class="form-control">Statement 4</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-primary py-2 px-3"
+                      id="basic-addon1"
+                      >E</span
+                    >
+                    <div class="form-control">Statement 5</div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-md-4 ms-md-3 mt-4 mt-md-0">
+                <fieldset class="border px-2 rounded">
+                  <legend class="float-none w-auto text-center">
+                    Colums B
+                  </legend>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-secondary py-2 px-3"
+                      id="basic-addon1"
+                      >D</span
+                    >
+                    <div class="form-control">Statement 5</div>
+                    <div class="">
+                        <i class="fa-solid fa-arrows-up-down-left-right position-absolute top-0 end-0 translate-middle-x mt-2 text-muted fs-5" ></i>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-secondary py-2 px-3"
+                      id="basic-addon1"
+                      >D</span
+                    >
+                    <div class="form-control">Statement 4</div>
+                    <div class="">
+                        <i class="fa-solid fa-arrows-up-down-left-right position-absolute top-0 end-0 translate-middle-x mt-2 text-muted fs-5" ></i>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-secondary py-2 px-3"
+                      id="basic-addon1"
+                      >B</span
+                    >
+                    <div class="form-control">Statement 2</div>
+                    <div class="">
+                        <i class="fa-solid fa-arrows-up-down-left-right position-absolute top-0 end-0 translate-middle-x mt-2 text-muted fs-5" ></i>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-secondary py-2 px-3"
+                      id="basic-addon1"
+                      >A</span
+                    >
+                    <div class="form-control">Statement 1</div>
+                    <div class="">
+                        <i class="fa-solid fa-arrows-up-down-left-right position-absolute top-0 end-0 translate-middle-x mt-2 text-muted fs-5" ></i>
+                    </div>
+                  </div> <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-white bg-secondary py-2 px-3"
+                      id="basic-addon1"
+                      >C</span
+                    >
+                    <div class="form-control">Statement 5</div>
+                    <div class="">
+                        <i class="fa-solid fa-arrows-up-down-left-right position-absolute top-0 end-0 translate-middle-x mt-2 text-muted fs-5" ></i>
+                    </div>
+                  </div>
+                
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <!-- btns  -->
+          <div class="mt-5">
+          <div class="position-relative  ms-md-5"> <div class="btn btn-danger rounded-pill position-absolute top-100 start-0   ">
+            Leave Quiz
+        </div></div>
+          <div class="position-relative  me-md-5"> <div class="btn btn-success rounded-pill position-absolute top-0 end-0">
+            Next
+        </div></div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("#menubtn");
+      const Links = document.querySelector(".sliderBar");
+      const mainBody = document.querySelector(".columsForm");
+
+      btn.addEventListener("click", () => {
+        Links.classList.add("responsive");
+      });
+      mainBody.addEventListener("click", () => {
+        Links.classList.remove("responsive");
+      });
+
+
+      let max = 0;
+      let small = 5;
+      let tiemr = setInterval(() => {
+        const element = document.querySelector(".mycounter");
+        element.innerHTML = small;
+        if (small == max) {
+          clearInterval(tiemr);
+        }
+        --small;
+      }, 1000);
+    </script>
+  </body>
+</html>

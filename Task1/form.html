@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iQzeto_form</title>
+     <!-- link custom css  -->
+     <link rel="stylesheet" href="style/style.css">
+     <!-- link bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--  Fontawsome Icon CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- link bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex p-0 m-0">
+
+   
+
+      <!-- slid bar  -->
+  
+  <div class=" mt-2"  >
+  
+
+    <div class="sliderBar sliderBar1  px-md-1 h-100" id="responsiveSideBar">
+        <div>
+            <h2 class="py-3 text-center">iQzeto</h2>
+        </div>
+        <div class="sliderItem">
+            <ul>
+                <li class="active  rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-house"></i>Dashboards</li>
+                <li class="rounded p-2 mb-1 "> <i class="fa-solid fa-box"></i> Question Bank</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-business-time"></i>Shedule Quiz</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-regular fa-user"></i> Profile</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-wallet"></i> My Wallet</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-people-roof"></i>User Management</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule Quiz</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>User Shedule Quiz</li>
+                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-server"></i>Played Quiz</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <div class="container-fluid">
+
+
+ <!-- main body  -->
+ <div class="conatiner ms-md-3 ">
+
+    <div class="row pt-2 ">
+        <div class="menubar d-flex justify-content-between align-items-center rounded">
+            <div class="item pt-2">
+                <ul class="p-0 d-flex gap-3 align-items-center">
+
+                    <li class="menubtn">
+                        
+                      <button class="btn border bg-primary" type="button" id="menubtn"> <i class="fa fa-bars"></i></button>
+                    </li>
+
+                    <li class="d-flex">
+
+                        <div class=" text-dark text-wrap" style="width: rem;">
+                            <img src="./assets/item1.PNG" alt="">
+                        </div>
+                        <div class=""> 12$ <br> Real Qzeto</div>
+                    </li>
+                    <li class="d-flex">
+
+                        <div class=" text-dark text-wrap" style="width: rem;">
+                            <img src="./assets/item2.PNG" alt="">
+                        </div>
+                        <div class=""> 3$ <br>Qzeto Price</div>
+                    </li>
+                    <li class="d-flex">
+                        <div class=" text-dark text-wrap" style="width: rem;">
+                            <img src="./assets/item3.PNG" alt="">
+                        </div>
+                        <div class=""> 0$ <br> Bounas back</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+        <div class="toggleBtn d-none d-md-block">
+            <div class="d-flex">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    <span class="position-absolute ms-4 mt-1 text-white text2">start</span>
+                  </label>
+                  <label class="switch ms-2 me-2">
+                    <input type="checkbox">
+                    <span class="slider round bg-success"></span>
+                    <span class="position-absolute ms-4 mt-1 text-white text2">End</span>
+                  </label>
+            <!-- Checked switch -->
+  </div>
+        </div>
+            <div class="profile d-flex">
+
+                <div class="profileName mt-3 d-none d-md-block fw-bold text-primary">
+                    <span>Charlotte</span> <span class="dots">...</span>
+                </div>
+                <div class="profilepic">
+                    <img src="./assets/profile.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+ </div>
+
+
+
+<!-- /form  -->
+<div class="container rounded bg-white menubar py-2 " >
+    <div class="pt-3"><span class="text-primary fw-bolder">Schedule new Quize</span></div>
+
+
+<form action="" class="">
+    <div class="section1 mt-md-2 ms-2">
+        <div class="head fw-bold"> <h6> <span class="badge rounded-pill bg-primary me-2">1</span>Basic details</h6>
+        </div>
+        <div class="col-md-10 mb-2 mt-2 ms-md-4">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter quiz title here">
+          </div>
+         
+     <div class="row">
+          <div class="col-md-3 col-6 mb-3 ms-md-4">
+            <label for="disabledSelect" class="form-label">Type</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Select option</option>
+            </select>
+          </div>  
+          <div class="col-md-3 col-6 mb-3 ms-md-4">
+            <label for="disabledSelect" class="form-label">Category</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Select option</option>
+            </select>
+          </div>  
+          <div class="col-md-3 mb-3 ms-md-4">
+            <label for="disabledSelect" class="form-label">Registration Fee</label>
+            
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Registration fees">
+          </div>    
+         </div>    
+    </div>
+
+    <div class="section1 mt-md-2 ms-2">
+        <div class="head fw-bold"> <h6> <span class="badge rounded-pill bg-primary me-2">2</span>Timning and Audiences</h6>
+        </div>  
+     <div class="row">
+        
+          <div class="col-md-3 col-12 ms-md-4 ">
+            <label for="disabledSelect" class="form-label">Date</label>
+                    <div class="position-relative ">
+                    <input type="text" class="form-control" placeholder="Select Date" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class=""><i class="fa-solid fa-calendar-days position-absolute top-0 end-0  translate-middle-x mt-2 text-muted fs-5"></i></div>
+          </div> 
+        </div>
+
+        <div class="col-md-3 col-6  ">
+            <label for="disabledSelect" class="form-label">Start Time</label>
+                    <div class="position-relative ">
+                    <input type="text" class="form-control" placeholder="Select Date" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class=""><i class="fa-regular fa-clock position-absolute top-0 end-0  translate-middle-x mt-2 text-muted fs-5"></i></div>
+          </div> 
+        </div>
+
+        <div class="col-md-3 col-6  ">
+            <label for="disabledSelect" class="form-label">End Time</label>
+                    <div class="position-relative ">
+                    <input type="text" class="form-control" placeholder="Select Date" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class=""><i class="fa-regular fa-clock position-absolute top-0 end-0  translate-middle-x mt-2 text-muted fs-5"></i></div>
+          </div> 
+        </div>
+          </div> 
+          
+          
+          
+         
+           
+         <div class="row mt-2">
+  
+            <div class="col-md-3 col-12 ms-md-4">
+              <label for="disabledSelect" class="form-label">Min. Participants</label> <   
+                  <div class="position-relative ">
+                <input type="text" class="form-control" placeholder="Select Date" aria-label="Username" aria-describedby="basic-addon1">
+                <div class=""><i class="fa-solid fa-users position-absolute top-0 end-0  translate-middle-x mt-2 text-muted fs-5"></i></div>
+      </div> 
+            </div> 
+
+           
+        <div class="col-md-3 col-12  ">
+            <label for="disabledSelect" class="form-label">Duration</label>
+                    <div class="position-relative ">
+                    <input type="text" class="form-control" placeholder="Select Date" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class=""><i class="fa-regular fa-clock position-absolute top-0 end-0  translate-middle-x mt-2 text-muted fs-5"></i></div>
+          </div> 
+       
+  
+           
+            
+            
+            
+           
+           </div>  
+    </div>
+
+    <div class="section1 mt-3 ms-2">
+        <div class="head fw-bold"> <h6> <span class="badge rounded-pill bg-primary me-2">3</span>Question Rules</h6>
+        </div>
+        
+         
+     <div class="row">
+          <div class="col-md-2 mb-3 ms-md-4">
+            <label for="disabledSelect" class="form-label">Question Type</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Select option</option>
+            </select>
+          </div>  
+          <div class="col-md-2 mb-3 ">
+            <label for="disabledSelect" class="form-label">Question Subject</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Select option</option>
+            </select>
+          </div>  
+          <div class="col-md-2 col-12 mb-3 ">
+            <label for="disabledSelect" class="form-label">No. of Question</label>
+            <input type="number" placeholder="1" class="form-control w-50" >
+          </div>  
+         
+        
+         </div> 
+        <a href="" class="text-decoration-none"><div class="ms-3"><span class="text-primary ">Add more +</span></div></a>  
+
+
+        <div class="position-relative pt-5"> <div class="btn btn-primary rounded-pill position-absolute bottom-0 end-0">
+            Save
+        </div></div>
+       
+   
+
+    </div>
+</form>
+</div>
+ 
+    </div>
+</div>
+
+
+
+
+
+<script>
+   
+const btn = document.querySelector('#menubtn');
+const Links = document.querySelector('.sliderBar');
+
+btn.addEventListener('click', () => {
+  Links.classList.toggle('responsive');
+});
+
+// document.body.addEventListener('click', () => {
+//   Links.classList.remove('responsive');
+// });
+  
+</script>
+</body>
+</html>
