@@ -240,6 +240,42 @@ border-radius: 20px!important;
 .spinner1 div:nth-child(1){
     position: absolute; top: -7px; left: -17px;
 }
+
+/* /Question page css */
+.ScoreCard{
+  background-color: #2F4F78;
+  border-radius: 1rem;
+}
+.Score1{
+    border: 7px solid #CDD2D7;
+    color: #CDD2D7;
+}
+.Score2{
+    border: 7px solid #FBD37B;
+    color: #FBD37B;
+}
+.Score3{
+    border: 7px solid #69EBC5;
+    color: #69EBC5;
+}
+.Score4{
+    border: 7px solid #FCA50A;
+    color: #FCA50A;
+    
+}
+.semi-circle {
+    right: -0.4rem;
+    top: -0.7rem;
+    width: 70px;
+    height: 145px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 11px solid #35CA36;
+    border-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 /* responsive css query  */
 @media screen and (max-width:400px){
     
@@ -331,8 +367,15 @@ font-weight: 600;}
     background: rgb(106, 143, 210);
 }
 .sliderBarResMenu{display: flex;}
-
 }
+/* /question */
+/* .ScoreCard{
+    background-color: white;
+  } */
+  .ScoreResponsive{
+    background-color: #2F4F78;
+    border-radius: .5rem;
+  }
 @media screen and (max-width: 1000px){
  #resBody{
         margin-top: 1rem;
