@@ -267,10 +267,10 @@ border-radius: 20px!important;
     right: -0.4rem;
     top: -0.7rem;
     width: 70px;
-    height: 145px;
+    height: 137px;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
-    border: 11px solid #35CA36;
+    border: 12px solid #35CA36;
     border-left: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -367,15 +367,22 @@ font-weight: 600;}
     background: rgb(106, 143, 210);
 }
 .sliderBarResMenu{display: flex;}
-}
+
 /* /question */
-/* .ScoreCard{
+.ScoreCard{
     background-color: white;
-  } */
+  }
   .ScoreResponsive{
     background-color: #2F4F78;
     border-radius: .5rem;
   }
+  .semi-circle {
+    width: 53px;
+    height: 107px;
+    border: 11px solid #35CA36;
+    border-left: 0;
+}
+}
 @media screen and (max-width: 1000px){
  #resBody{
         margin-top: 1rem;
