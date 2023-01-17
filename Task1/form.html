@@ -28,28 +28,45 @@
 
       <!-- slid bar  -->
   
-  <div class=" mt-2"  >
-  
-
-    <div class="sliderBar sliderBar1  px-md-1 h-100" id="responsiveSideBar">
+      <div class="sliderBar px-md-1 mt-md-2" id="responsiveSideBar" style="height: 100vh">
         <div>
-            <h2 class="py-3 text-center">iQzeto</h2>
+          <h2 class="py-3 text-center">iQzeto</h2>
         </div>
         <div class="sliderItem">
-            <ul>
-                <li class="active  rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-house"></i>Dashboards</li>
-                <li class="rounded p-2 mb-1 "> <i class="fa-solid fa-box"></i> Question Bank</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-business-time"></i>Shedule Quiz</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-regular fa-user"></i> Profile</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-wallet"></i> My Wallet</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-people-roof"></i>User Management</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule Quiz</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>User Shedule Quiz</li>
-                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-server"></i>Played Quiz</li>
-            </ul>
+          <ul class="p-0 ms-4">
+            <li class="active rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-house"></i>Dashboards
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-box"></i> Question Bank
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-business-time"></i>Shedule Quiz
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-regular fa-user"></i> Profile
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-wallet"></i> My Wallet
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-people-roof"></i>User Management
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-sharp fa-solid fa-business-time"></i>User Shedule
+            </li>
+            <li class="rounded p-2 mb-1">
+              <i class="fa-solid fa-server"></i>Played Quiz
+            </li>
+          </ul>
         </div>
-    </div>
-</div>
+        <!-- <div class="">
+              <button class="">Clear</button>
+            </div> -->
+      </div>
     
     <div class="container-fluid">
 
@@ -64,7 +81,7 @@
 
                     <li class="menubtn">
                         
-                      <button class="btn border bg-primary" type="button" id="menubtn"> <i class="fa fa-bars"></i></button>
+                      <button class="btn border" type="button" id="menubtn"> <i class="fa fa-bars"></i></button>
                     </li>
 
                     <li class="d-flex">
@@ -123,7 +140,7 @@
 
 
 <!-- /form  -->
-<div class="container rounded bg-white menubar py-2 " >
+<div class="container rounded bg-white menubar py-2 formBody" >
     <div class="pt-3"><span class="text-primary fw-bolder">Schedule new Quize</span></div>
 
 
@@ -267,11 +284,14 @@
    
 const btn = document.querySelector('#menubtn');
 const Links = document.querySelector('.sliderBar');
+const mainBody = document.querySelector('.formBody');
 
 btn.addEventListener('click', () => {
   Links.classList.toggle('responsive');
 });
-
+mainBody.addEventListener("click", () => {
+      Links.classList.remove("responsive");
+    });
 // document.body.addEventListener('click', () => {
 //   Links.classList.remove('responsive');
 // });
