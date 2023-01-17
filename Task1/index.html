@@ -27,27 +27,45 @@
 
 
 
-        <div class=" Navbar mt-2" >
-
-            <div class="sliderBar sliderBar1 px-1">
-                <div>
-                    <h2 class="py-3 text-center">iQzeto</h2>
-                </div>
-                <div class="sliderItem">
-                    <ul>
-                        <li class="active  rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-house"></i>Dashboards</li>
-                        <li class="rounded p-2 mb-1 "> <i class="fa-solid fa-box"></i> Question Bank</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-solid fa-business-time"></i>Shedule Quiz</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-regular fa-user"></i> Profile</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-solid fa-wallet"></i> My Wallet</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-people-roof"></i>User Management</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule Quiz</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>User Shedule Quiz</li>
-                        <li class="rounded p-2 mb-1 "><i class="fa-solid fa-server"></i>Played Quiz</li>
-                    </ul>
-                </div>
+        <div class="sliderBar px-md-1 mt-md-2 w-50" id="responsiveSideBar" style="height: 170vh">
+            <div>
+              <h2 class="py-3 text-center">iQzeto</h2>
             </div>
-        </div>
+            <div class="sliderItem">
+              <ul class="p-0 ms-4">
+                <li class="active rounded p-2 mb-1">
+                  <i class="fa-sharp fa-solid fa-house"></i>Dashboards
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-solid fa-box"></i> Question Bank
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-solid fa-business-time"></i>Shedule Quiz
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-regular fa-user"></i> Profile
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-solid fa-wallet"></i> My Wallet
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-sharp fa-solid fa-people-roof"></i>User Management
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-sharp fa-solid fa-business-time"></i>User Shedule
+                </li>
+                <li class="rounded p-2 mb-1">
+                  <i class="fa-solid fa-server"></i>Played Quiz
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="">
+                  <button class="">Clear</button>
+                </div> -->
+          </div>
 
 
 
@@ -57,22 +75,10 @@
                 <div class="menubar d-flex justify-content-between align-items-center rounded">
                     <div class="item pt-2">
                         <ul class="p-0 d-flex gap-3 align-items-center">
-
                             <li class="menubtn">
-                                <nav class="navbar navbar-expand-lg navbar-light">
-                                    <div class="">
-
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#navbarSupportedContent"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-icon"></span>
-                                        </button>
-
-
-                                    </div>
-                                </nav>
-                            </li>
+                        
+                                <button class="btn border" type="button" id="menubtn"> <i class="fa fa-bars"></i></button>
+                              </li>
 
                             <li class="d-flex">
 
@@ -108,35 +114,8 @@
                 </div>
             </div>
 
-            
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-                <div class="Navbar position-absolute Start-0 w-75 " id="navbarRes">
-
-                    <div class="sliderBar px-1">
-                        <div>
-                            <h2 class="py-3 text-center">iQzeto</h2>
-                        </div>
-                        <div class="sliderItem">
-                            <ul>
-                                <li class="active  rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-house"></i>Dashboards</li>
-                                <li class="rounded p-2 mb-1 "> <i class="fa-solid fa-box"></i> Question Bank</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-business-time"></i>Shedule Quiz</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-regular fa-user"></i> Profile</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-wallet"></i> My Wallet</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-people-roof"></i>User Management</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>Admi Shedule Quiz</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-sharp fa-solid fa-business-time"></i>User Shedule Quiz</li>
-                                <li class="rounded p-2 mb-1 "><i class="fa-solid fa-server"></i>Played Quiz</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- sliderbar -->
-            <div class="container-fluid ">
+            <div class="container-fluid indexbody">
 
                 <!-- //main body  -->
                 <div class="row" id="resBody">
@@ -1135,6 +1114,29 @@
         </div>
 
     </div>
+    <script>
+        const btn = document.querySelector("#menubtn");
+        const Links = document.querySelector(".sliderBar");
+        const mainBody = document.querySelector(".indexbody");
+    
+        btn.addEventListener("click", () => {
+          Links.classList.add("responsive");
+        });
+        mainBody.addEventListener("click", () => {
+          Links.classList.remove("responsive");
+        });
+    
+        let max = 0;
+        let small = 5;
+        let tiemr = setInterval(() => {
+          const element = document.querySelector(".mycounter");
+          element.innerHTML = small;
+          if (small == max) {
+            clearInterval(tiemr);
+          }
+          --small;
+        }, 1000);
+      </script>
 </body>
 
 </html>

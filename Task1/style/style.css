@@ -1,5 +1,5 @@
 .main{
-    background: #eae3e3;
+    background: #eae3e3!important;
 }
 li{
     list-style: none;
@@ -15,10 +15,6 @@ li{
     border-radius: .7rem;
     margin-left: -1rem;
     width: 25%;
-}
-
-.sliderBar1{
-  height: 170vh;
 }
 .sliderBar h2{
     color: white;
@@ -83,7 +79,6 @@ li{
     -webkit-transform: translateX(56px);
     -ms-transform: translateX(56px);
     transform: translateX(56px);
-
   }
   /* Rounded sliders */
   .slider.round {
@@ -195,10 +190,10 @@ border-radius: 20px!important;
     background: rgb(4, 4, 186);
 }
 .second{ background: rgb(4, 4, 186);}
-.b1{background-color: #49c295;}
+.b1{background-color: #49c295 !important;}
 .b2{background-color: #f9c529;}
 .b3{background-color: green;}
-.b4{background-color: orange;}
+.b4{background-color: orange !important;}
 .third{
     height: 4.5vh;
     background: lightgray;
@@ -234,12 +229,6 @@ border-radius: 20px!important;
     background-color: #80ddeb21;
     border-radius: 1rem;
 }
-.spinner1{
-    position: absolute; left: 50%; top: -2.8rem;
-}
-.spinner1 div:nth-child(1){
-    position: absolute; top: -7px; left: -17px;
-}
 
 /* /Question page css */
 .ScoreCard{
@@ -263,19 +252,41 @@ border-radius: 20px!important;
     color: #FCA50A;
     
 }
-.semi-circle {
-    right: -0.4rem;
-    top: -0.7rem;
-    width: 70px;
-    height: 137px;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
-    border: 12px solid #35CA36;
-    border-left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+  .circle-loader {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .loader {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 13px solid #35CA36;
+    border-top-color: #2F4F78;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .abc{
+ border: 3px solid #2F4F78;
+  }
+/* responsive css query  */
+@media screen and (max-width:400px){
+    
+ .menubar{ margin-left: 10px;  }
+ .menubar .item li{
+    font-size: 7px;
+    font-weight: bold;
+ }
+
 /* responsive css query  */
 @media screen and (max-width:400px){
     
@@ -298,7 +309,7 @@ font-weight: 600;}
 #resCenter{margin:0 1px 0 1px;   }
 }
 
-
+}
 @media screen and (max-width:768px){
     .sliderBar{
        display: none;
@@ -389,7 +400,4 @@ font-weight: 600;}
         display: flex;
         flex-direction: column-reverse;}
 }
-    
-
-
     
